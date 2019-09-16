@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RestController
 public class TestController {
 
+	
     @RequestMapping("/projects/{username}")
     public User getUserProjects(@PathVariable String username) {
         User emp1 = new User();
+        emp1.setUsername(username);
     return emp1;
     }
 
