@@ -14,7 +14,7 @@ docker pull adeebdev/assignments:latest
 
 Execute the below command in your command prompt to run the assignment solution
 
-docker run -it adeebdev/assignments:latest
+docker run -p 80:80 -t adeebdev/assignments:latest
 
 ### View Results
 
