@@ -1,24 +1,24 @@
 ### Assignment Review Steps
 
+* Environment Requirements
+
+You need to have docker installed in the system
+
 * Download Artifacts
 
-Below is the url for Github repository
+Execute the below command in your command prompt to download the docker image of the assignment
 
-https://github.com/adeebdev/Assignments.git
-
-Text pending completion..
-
-* Setup Solution
-
-Text pending completion..
+docker pull adeebdev/assignments:latest
 
 * Execute Solution
 
-Text pending completion..
+Execute the below command in your command prompt to run the assignment solution
+
+docker run -it adeebdev/assignments:latest
 
 * View Results
 
-Open Postman or any web API calling application and type below URLs to see results. Please replace localhost in the url with the IP address of the system that hosts the solution.
+Open Postman or any web API calling application and type below URLs to see results. Please replace localhost in the url with the IP address of the docker container that hosts the solution. 
 
 Users: 
 
@@ -37,4 +37,7 @@ http://localhost/projects/bill/1
 http://localhost/projects/bill/2
 
 
-Text pending completion..
+Add header with key "Accept" and value "application/json" to get output in JSON format
+
+Add header with key "Accept" and value "application/xml" to get output in XML format
+
