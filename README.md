@@ -18,7 +18,7 @@ docker run -p 80:80 -t adeebdev/assignments:latest
 
 ### View Results
 
-Open Postman or any web API calling application and type below URLs to see results. Please replace localhost in the url with the IP address of the docker container that hosts the solution. 
+Open Postman or any web API calling application and type below URLs to see results. Please replace localhost in the url with the IP address of the docker container (run command 'docker-machine env') that hosts the solution.
 
 Users: 
 
