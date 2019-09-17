@@ -1,5 +1,4 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /mdfile/target
-ARG JAR_FILE
-COPY ${JAR_FILE} mdfile.jar
+FROM java:8
+EXPOSE 80
+ADD /target/app.jar mdfile.jar
 ENTRYPOINT ["java","-jar","mdfile.jar"]
